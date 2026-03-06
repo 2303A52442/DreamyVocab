@@ -6,6 +6,10 @@ on:
     tags:
       - 'v*'
 
+# Explicit permissions so GITHUB_TOKEN can create releases
+permissions:
+  contents: write
+
 jobs:
   build-and-release:
     runs-on: windows-latest
@@ -95,7 +99,7 @@ jobs:
             - SQLite word database stored in `%APPDATA%\PersonalVocabTracker`
 
             See the [Installation guide](https://github.com/${{ github.repository }}/blob/main/docs/Installation.md) for details.
-          files: installer_out\VocabTracker-Setup.exe
+          files: installer_out/VocabTracker-Setup.exe
           draft: false
           prerelease: false
         env:
