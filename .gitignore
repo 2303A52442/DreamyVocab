@@ -1,0 +1,41 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# ── PyInstaller ──────────────────────────────────────────
+build/
+dist/
+
+# Compiled executables at project root (built artefacts)
+*.exe
+
+# ── Java / Maven ─────────────────────────────────────────
+target/
+dependency-reduced-pom.xml
+
+# ── Installer output ─────────────────────────────────────
+installer_out/
+
+# ── IDE / OS ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ── Test / debug artefacts ───────────────────────────────
+*.log
+
+# ── Database (user data) ─────────────────────────────────
+*.db
+
+# ── Copilot agent internals ──────────────────────────────
+.agent/
